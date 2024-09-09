@@ -8,7 +8,7 @@ import 'globals.dart' as globals;
 ///contains functions associated with add/reading data from database
 class FirebaseAPI{
 
-  ///adds event to firebase
+  ///adds event to firebase to push
   static Future<String> createEvent(Event event) async{
     final docEvent = FirebaseFirestore.instance.collection('events').doc();
     event.id = docEvent.id;
